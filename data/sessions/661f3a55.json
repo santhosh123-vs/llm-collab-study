@@ -1,0 +1,56 @@
+{
+  "session_id": "661f3a55",
+  "task_type": "generation",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "create a snake game in python",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here is a simple implementation of the classic Snake game using Python and the Pygame library.\n\n```python\nimport pygame\nimport sys\nimport time\nimport random\n\n# Direction Constants\nUP = 1\nRIGHT = 2\nDOWN = 3\nLEFT = 4\n\nclass SnakeGame:\n    def __init__(self, width=800, height=600):\n        self.width = width\n        self.height = height\n        self.snake = [(200, 200), (220, 200), (240, 200)]\n        self.direction = RIGHT\n        self.apple = self.generate_apple()\n        self.score = 0\n\n        pygame.init()\n        self.display = pygame.display.set_mode((width, height))\n        pygame.display.set_caption('Snake Game')\n        self.font = pygame.font.Font(None, 36)\n\n    def generate_apple(self):\n        return (random.randint(0, self.width - 20) // 20 * 20, \n                random.randint(0, self.height - 20) // 20 * 20)\n\n    def draw_snake(self):\n        for x, y in self.snake:\n            pygame.draw.rect(self.display, (0, 255, 0), (x, y, 20, 20))\n\n    def draw_apple(self):\n        pygame.draw.rect(self.display, (255, 0, 0), (self.apple[0], self.apple[1], 20, 20))\n\n    def draw_score(self):\n        text = self.font.render(f'Score: {self.score}', True, (255, 255, 255))\n        self.display.blit(text, (10, 10))\n\n    def update(self):\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                pygame.quit()\n                sys.exit()\n            elif event.type == pygame.KEYDOWN:\n                if event.key == pygame.K_UP and self.direction != DOWN:\n                    self.direction = UP\n                elif event.key == pygame.K_DOWN and self.direction != UP:\n                    self.direction = DOWN\n                elif event.key == pygame.K_LEFT and self.direction != RIGHT:\n                    self.direction = LEFT\n                elif event.key == pygame.K_RIGHT and self.direction != LEFT:\n                    self.direction = RIGHT\n\n        head = self.snake[-1]\n        if self.direction == UP:\n            new_head = (head[0], head[1] - 20)\n        elif self.direction == DOWN:\n            new_head = (head[0], head[1] + 20)\n        elif self.direction == LEFT:\n            new_head = (head[0] - 20, head[1])\n        elif self.direction == RIGHT:\n            new_head = (head[0] + 20, head[1])\n\n        self.snake.append(new_head)\n\n        if self.snake[-1] == self.apple:\n            self.score += 1\n            self.apple = self.generate_apple()\n        else:\n            self.snake.pop(0)\n\n        if (self.snake[-1][0] < 0 or self.snake[-1][0] >= self.width or \n            self.snake[-1][1] < 0 or self.snake[-1][1] >= self.height or \n            self.snake[-1] in self.snake[:-1]):\n            print(f'Game Over! Your score is {self.score}.')\n            pygame.quit()\n            sys.exit()\n\n    def run(self):\n        clock = pygame.time.Clock()\n        while True:\n            self.update()\n            self.display.fill((0, 0, 0))\n            self.draw_snake()\n            self.draw_apple()\n            self.draw_score()\n            pygame.display.flip()\n            clock.tick(10)\n\nif __name__ == '__main__':\n    game = SnakeGame()\n    game.run()\n```\n\nThis code will create a window with a black background, and a green snake that you can control with the arrow keys. The snake will eat the red apples that appear on the screen, and your score will increase for each apple eaten. If the snake runs into the edge of the screen or itself, the game will end and your score will be printed to the console.\n\nNote: You will need to have the Pygame library installed to run this code. You can install it with pip: `pip install pygame`.",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "who is pm of idia",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "As of my knowledge cutoff, the Prime Minister of India is Narendra Modi. He has been serving as the Prime Minister of India since May 26, 2014. However, please note that my knowledge may not be up-to-date, and I recommend checking with a reliable news source for the most current information.",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": 1
+    }
+  ],
+  "outcome": "success",
+  "final_pattern": "linear_flow",
+  "task_description": "",
+  "timestamp": "2026-02-25T17:44:10.035569",
+  "num_turns": 4,
+  "num_corrections": 0,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.0,
+  "avg_fluency": 0.0,
+  "avg_correctness": 1.0
+}

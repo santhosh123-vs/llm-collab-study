@@ -1,0 +1,76 @@
+{
+  "session_id": "66487553",
+  "task_type": "generation",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Implement a LRU cache class",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here is my first attempt...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 5,
+      "correctness_score": 3
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "That's not quite right, handle edge cases...",
+      "has_correction": true,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "Here's the corrected version...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 5,
+      "correctness_score": 5
+    },
+    {
+      "turn_id": 4,
+      "role": "user",
+      "content": "One more issue with complexity...",
+      "has_correction": true,
+      "has_constraint": true,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 5,
+      "role": "assistant",
+      "content": "Updated to O(n) using hash map...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 3,
+      "correctness_score": 4
+    }
+  ],
+  "outcome": "success",
+  "final_pattern": "iterative_refinement",
+  "task_description": "Write a binary search function in Python",
+  "timestamp": "2026-02-25T17:22:02.499725",
+  "num_turns": 6,
+  "num_corrections": 2,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.667,
+  "avg_fluency": 4.33,
+  "avg_correctness": 4.0
+}

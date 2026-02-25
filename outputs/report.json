@@ -1,0 +1,78 @@
+{
+  "total_sessions": 17,
+  "rq1_pattern_distribution": {
+    "counts": {
+      "instruction_failure": 2,
+      "iterative_refinement": 6,
+      "linear_flow": 8,
+      "over_trust": 1
+    },
+    "percentages": {
+      "instruction_failure": 11.8,
+      "iterative_refinement": 35.3,
+      "linear_flow": 47.1,
+      "over_trust": 5.9
+    }
+  },
+  "rq2_per_task_stats": {
+    "refactoring": {
+      "count": 5,
+      "avg_turns": 3.2,
+      "avg_retry_rate": 0.1,
+      "success_rate": 0.8,
+      "avg_fluency": 4.1,
+      "avg_correctness": 3.4
+    },
+    "generation": {
+      "count": 7,
+      "avg_turns": 3.71,
+      "avg_retry_rate": 0.238,
+      "success_rate": 0.857,
+      "avg_fluency": 3.12,
+      "avg_correctness": 3.21
+    },
+    "debugging": {
+      "count": 5,
+      "avg_turns": 4.2,
+      "avg_retry_rate": 0.433,
+      "success_rate": 0.4,
+      "avg_fluency": 4.37,
+      "avg_correctness": 3.37
+    }
+  },
+  "rq3_failure_analysis": {
+    "success_metrics": {
+      "count": 12,
+      "avg_turns": 3.58,
+      "avg_retry_rate": 0.153,
+      "success_rate": 1.0,
+      "avg_fluency": 3.6,
+      "avg_correctness": 3.36
+    },
+    "failure_metrics": {
+      "count": 3,
+      "avg_turns": 4.0,
+      "avg_retry_rate": 0.5,
+      "success_rate": 0.0,
+      "avg_fluency": 4.33,
+      "avg_correctness": 3.33
+    },
+    "partial_metrics": {
+      "count": 2,
+      "avg_turns": 4.0,
+      "avg_retry_rate": 0.5,
+      "success_rate": 0.0,
+      "avg_fluency": 4.0,
+      "avg_correctness": 3.0
+    },
+    "high_correction_success_rate": 1.0,
+    "low_correction_success_rate": 0.667
+  },
+  "rq4_trust_calibration": {
+    "avg_fluency": 4.28,
+    "avg_correctness": 3.31,
+    "fluency_correctness_correlation": -0.358,
+    "over_trust_count": 1,
+    "over_trust_percentage": 5.9
+  }
+}

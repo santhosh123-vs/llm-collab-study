@@ -1,0 +1,46 @@
+{
+  "session_id": "a3bafc77",
+  "task_type": "refactoring",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Convert callbacks to async/await",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here's a clean, well-structured solution...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 4,
+      "correctness_score": 2
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "Looks great, I'll use this!",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    }
+  ],
+  "outcome": "success",
+  "final_pattern": "over_trust",
+  "task_description": "Refactor to remove code duplication",
+  "timestamp": "2026-02-13T17:22:02.499725",
+  "num_turns": 3,
+  "num_corrections": 0,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.0,
+  "avg_fluency": 4.0,
+  "avg_correctness": 2.0
+}

@@ -1,0 +1,56 @@
+{
+  "session_id": "e9a20b39",
+  "task_type": "generation",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Implement a linked list with insert and delete",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here is my first attempt...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 3,
+      "correctness_score": 3
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "That's not quite right, handle edge cases...",
+      "has_correction": true,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "Here's the corrected version...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 5,
+      "correctness_score": 4
+    }
+  ],
+  "outcome": "failure",
+  "final_pattern": "iterative_refinement",
+  "task_description": "Write a function to find all permutations of a string",
+  "timestamp": "2026-02-14T17:22:02.499725",
+  "num_turns": 4,
+  "num_corrections": 1,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.5,
+  "avg_fluency": 4.0,
+  "avg_correctness": 3.5
+}

@@ -1,0 +1,56 @@
+{
+  "session_id": "01439aac",
+  "task_type": "debugging",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Debug why this recursive function causes stack overflow",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here's the solution using recursion...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": true,
+      "fluency_score": 4,
+      "correctness_score": 3
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "I said NO recursion! Use iteration.",
+      "has_correction": true,
+      "has_constraint": true,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "Sorry, here is the iterative version...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 5,
+      "correctness_score": 3
+    }
+  ],
+  "outcome": "partial",
+  "final_pattern": "instruction_failure",
+  "task_description": "Debug why this recursive function causes stack overflow",
+  "timestamp": "2026-02-24T17:22:02.499725",
+  "num_turns": 4,
+  "num_corrections": 1,
+  "num_instruction_violations": 1,
+  "retry_rate": 0.5,
+  "avg_fluency": 4.5,
+  "avg_correctness": 3.0
+}

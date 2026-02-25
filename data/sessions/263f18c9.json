@@ -1,0 +1,46 @@
+{
+  "session_id": "263f18c9",
+  "task_type": "debugging",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Fix the race condition in this threaded code",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here is the implementation...",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 4,
+      "correctness_score": 4
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "Looks good, thanks!",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    }
+  ],
+  "outcome": "success",
+  "final_pattern": "linear_flow",
+  "task_description": "Fix the off-by-one error in this loop",
+  "timestamp": "2026-02-19T17:22:02.499725",
+  "num_turns": 3,
+  "num_corrections": 0,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.0,
+  "avg_fluency": 4.0,
+  "avg_correctness": 4.0
+}
