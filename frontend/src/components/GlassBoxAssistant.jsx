@@ -67,7 +67,7 @@ export default function GlassBoxAssistant() {
 
     try {
       const apiMessages = updated.map((m) => ({ role: m.role, content: m.content }));
-      const resp = await axios.post("http://localhost:5001/api/chat", { messages: apiMessages, model });
+      const resp = await axios.post("/api/chat", { messages: apiMessages, model });
       const cleanContent = resp.data.content.replace(/<meta>[\s\S]*?<\/meta>/g, "").trim();
       setMessages([...updated, { role: "assistant", content: cleanContent, meta: resp.data.meta || {} }]);
     } catch (err) {
@@ -93,7 +93,7 @@ export default function GlassBoxAssistant() {
     }));
 
     try {
-      const resp = await axios.post("http://localhost:5001/api/sessions", {
+      const resp = await axios.post("/api/sessions", {
         task_type: taskType, turns, outcome, task_description: taskDesc,
       });
       alert(`Session saved!\nID: ${resp.data.session_id}\nPattern: ${resp.data.pattern}`);

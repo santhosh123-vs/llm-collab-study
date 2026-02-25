@@ -57,8 +57,8 @@ export default function ResearchDashboard() {
     setLoading(true);
     try {
       const [reportRes, sessionsRes] = await Promise.all([
-        axios.get("http://localhost:5001/api/report"),
-        axios.get("http://localhost:5001/api/sessions"),
+        axios.get("/api/report"),
+        axios.get("/api/sessions"),
       ]);
       setReport(reportRes.data);
       setSessions(sessionsRes.data);
