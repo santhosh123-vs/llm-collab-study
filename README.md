@@ -96,9 +96,7 @@ Priority 4: Linear Flow (ideal case, no issues)
 6. Run frontend: cd frontend && npm start
 7. Open: http://localhost:3000
 
-## Course
 
-Large Language Models | IIIT Kottayam
 
 ## Author
 
