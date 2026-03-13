@@ -1,0 +1,74 @@
+{
+  "session_id": "929fcf7c",
+  "task_type": "refactoring",
+  "language": "python",
+  "task_description": "Convert to async/await",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Convert to async/await",
+      "timestamp": "2026-02-25T13:23:19.585955",
+      "has_correction": false,
+      "has_constraint": true,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here's the fix:\n```python\nfor item in data:\n    result.append(item)\n```",
+      "timestamp": "2026-02-25T13:23:19.585957",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": true,
+      "fluency_score": 5,
+      "correctness_score": 2
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "Explain line 5.",
+      "timestamp": "2026-02-25T13:23:19.585959",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "Here's a clean implementation:\n```python\ndef solution(data):\n    return sorted(set(data))\n```",
+      "timestamp": "2026-02-25T13:23:19.585962",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 4,
+      "correctness_score": 3
+    },
+    {
+      "turn_id": 4,
+      "role": "user",
+      "content": "That's not what I asked \u2014 use list comprehensions only.",
+      "timestamp": "2026-02-25T13:23:19.585963",
+      "has_correction": true,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    }
+  ],
+  "outcome": "partial",
+  "final_pattern": "instruction_failure",
+  "researcher_notes": "",
+  "created_at": "2026-02-25T13:23:19.585953",
+  "num_turns": 5,
+  "num_user_turns": 3,
+  "num_corrections": 1,
+  "num_instruction_violations": 1,
+  "retry_rate": 0.3333333333333333,
+  "avg_fluency": 4.5,
+  "avg_correctness": 2.5
+}

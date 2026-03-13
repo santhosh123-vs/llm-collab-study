@@ -1,0 +1,63 @@
+{
+  "session_id": "4b4ff715",
+  "task_type": "refactoring",
+  "language": "python",
+  "task_description": "Refactor to list comprehensions",
+  "turns": [
+    {
+      "turn_id": 0,
+      "role": "user",
+      "content": "Refactor to list comprehensions",
+      "timestamp": "2026-02-25T13:23:19.585924",
+      "has_correction": false,
+      "has_constraint": true,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 1,
+      "role": "assistant",
+      "content": "Here's a clean implementation:\n```python\ndef solution(data):\n    return sorted(set(data))\n```",
+      "timestamp": "2026-02-25T13:23:19.585927",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 3,
+      "correctness_score": 4
+    },
+    {
+      "turn_id": 2,
+      "role": "user",
+      "content": "Explain line 5.",
+      "timestamp": "2026-02-25T13:23:19.585929",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": null,
+      "correctness_score": null
+    },
+    {
+      "turn_id": 3,
+      "role": "assistant",
+      "content": "Here's a clean implementation:\n```python\ndef solution(data):\n    return sorted(set(data))\n```",
+      "timestamp": "2026-02-25T13:23:19.585932",
+      "has_correction": false,
+      "has_constraint": false,
+      "instruction_violated": false,
+      "fluency_score": 4,
+      "correctness_score": 5
+    }
+  ],
+  "outcome": "success",
+  "final_pattern": "linear_flow",
+  "researcher_notes": "",
+  "created_at": "2026-02-25T13:23:19.585921",
+  "num_turns": 4,
+  "num_user_turns": 2,
+  "num_corrections": 0,
+  "num_instruction_violations": 0,
+  "retry_rate": 0.0,
+  "avg_fluency": 3.5,
+  "avg_correctness": 4.5
+}
